@@ -1,8 +1,8 @@
 module gorm.io/driver/clickhouse
 
-go 1.21
+go 1.22
 
-toolchain go1.21.1
+toolchain go1.22.4
 
 require (
 	github.com/ClickHouse/clickhouse-go/v2 v2.26.0
@@ -27,6 +27,8 @@ require (
 	github.com/shopspring/decimal v1.4.0 // indirect
 	go.opentelemetry.io/otel v1.26.0 // indirect
 	go.opentelemetry.io/otel/trace v1.26.0 // indirect
-	golang.org/x/sys v0.19.0 // indirect
+	golang.org/x/sys v0.23.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
+
+replace github.com/ClickHouse/clickhouse-go/v2 => github.com/nuonco/clickhouse-go/v2 v2.28.1-alpha
